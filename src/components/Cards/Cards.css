@@ -1,0 +1,9 @@
+.yoga-card{
+ width:70%;
+ margin:10px;   
+}
+.card-menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:40px;
+}

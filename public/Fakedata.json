@@ -1,0 +1,44 @@
+[
+    {
+      "_id": "63349d44df7f3d4b1a2404ed",
+      "picture": "https://thumbs.dreamstime.com/b/man-training-yoga-cobra-pose-outdoors-fitness-young-park-side-view-sporty-guy-makes-exercise-copy-space-115748399.jpg",
+      "age": 28,
+      "time": 47,
+      "name": "Cobra Pose"
+    },
+    {
+      "_id": "63349d446d411f8e89599c95",
+      "picture": "https://manflowyoga.com/wp-content/uploads/2014/08/Mountain-full-frontal.jpg",
+      "age": 27,
+      "time": 51,
+      "name": "Mountain Pose"
+    },
+    {
+      "_id": "63349d44c6550000e3ca7b3a",
+      "picture": "https://media.istockphoto.com/photos/athletic-young-man-doing-pigeon-pose-in-yoga-studio-picture-id1252417193?k=6&m=1252417193&s=612x612&w=0&h=psBNmtusXBokmnuq8vjCVBstYwlp_3N5m1gd_a-rzlQ=",
+      "age": 38,
+      "time": 41,
+      "name": "Peigeon Pose"
+    },
+    {
+      "_id": "63349d44fa6d104b38ba03d7",
+      "picture": "https://image.freepik.com/free-photo/full-shot-man-doing-cow-pose-mat-outside_23-2148717256.jpg",
+      "age": 26,
+      "time": 45,
+      "name": "Cow Pose"
+    },
+    {
+        "_id": "63349d44fa6d104b38ba03d8",
+        "picture": "https://media.istockphoto.com/photos/man-practicing-downward-facing-dog-pose-on-porch-picture-id1133155695",
+        "age": 26,
+        "time": 45,
+        "name": "Downward dog Pose"
+      },
+    {
+      "_id": "63349d44f7506f922fdcb36d",
+      "picture": "https://i.pinimg.com/originals/62/d0/2f/62d02f11138810b30b2d9cdd4e4a1bdb.jpg",
+      "age": 29,
+      "time": 37,
+      "name": "Warrior Pose"
+    }
+  ]
