@@ -15,4 +15,6 @@ margin-top: 30px;
     color: white;
     background-color: orangered;
     border: none;
+    cursor: pointer;
 }
+.card button:hover{background-color: blue;}
