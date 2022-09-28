@@ -43,8 +43,26 @@ const Cards = () => {
             </div>
             <div>
             <h3>70yrs </h3>
-            <p>Age</p></div>
+            <p>Age</p>
             </div>
+            </div>
+            <h2>Add a break</h2>
+            <div className='details'>
+            <button>10s</button>
+            <button>20s</button>
+            <button>30s</button>
+            <button>40s</button>
+            </div>
+            <h2>Exercise Details</h2>
+            <div className='exercise-time'>
+            <div>Exercise Time</div>
+            <div>0 seconds</div>
+            </div>
+            <div className='exercise-time'>
+            <div>Break Time</div>
+            <div>0 seconds</div>
+            </div>
+            <button className='btn-activity'>Activity Completed</button>
             </div>  
         </div>
     );

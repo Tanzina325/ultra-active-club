@@ -8,7 +8,7 @@ const Card = ({card}) => {
           <h4>{name}</h4>
           <h6>For age :{age}</h6> 
           <h6>Time consumed :{time}</h6>
-          <button>Add to list</button>
+          <button className='btn-card'>Add to list</button>
         </div>
     );
 };

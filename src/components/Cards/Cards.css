@@ -1,12 +1,15 @@
 .card-container{
     display: flex;
 }
+
 .yoga-card{
  width:70%;
  margin:10px;
  background-color: aliceblue;   
 }
-
+.header-menu{
+    text-align: center;
+}
 .card-menu{
     width: 80%;
     display: grid;
@@ -33,4 +36,27 @@ align-items: center;}
     justify-content: space-around;
     padding:0px 20px 0px 20px;
     border-radius: 5px;
+}
+.details button {
+    border-radius: 100%;
+    border: none;
+    margin: 30px 0 30px 0;
+}
+.details button:hover{background-color: orangered;}
+.exercise-time{
+    display: flex;
+    justify-content: space-between;
+    padding:15px 20px 15px 20px;
+    border-radius: 5px;
+    background-color:aliceblue ;
+    margin-top: 10px;
+}
+.btn-activity{
+    padding: 15px 60px;
+    margin: 30px 40px 30px 40px;
+    color: white;
+    background-color: orangered;
+    border: none;
+    cursor: pointer;
+    
 }
