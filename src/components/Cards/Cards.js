@@ -24,7 +24,15 @@ const Cards = () => {
                 ></Card>)}
             </div>
           </div>
-          <div className="sidebar-menu"></div>  
+          <div className="sidebar-menu">
+            <div className='profile'>
+            <div className='trainer-image'><img src="https://thumbs.dreamstime.com/z/serious-looking-old-man-portrait-29761931.jpg" alt="" /></div>
+            <div className='Introductory'>
+                <h4>Matiar Rahaman</h4>
+                <p>Tokio,Japan</p>
+            </div>
+            </div>
+            </div>  
         </div>
     );
 };
