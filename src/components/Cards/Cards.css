@@ -14,8 +14,12 @@
     grid-template-columns: repeat(3,1fr);
     grid-gap:40px;
 }
+.sidebar-menu{
+    
+    width:25%;
+}
 .profile{display: flex;
-justify-content: space-between;
+
 align-items: center;}
 .trainer-image img{
     width:40px;
@@ -23,3 +27,10 @@ align-items: center;}
     margin-right: 10px;
 }
 .Introductory p {margin-top:-20px ;}
+.details{
+    background-color:aliceblue ;
+    display: flex;
+    justify-content: space-around;
+    padding:0px 20px 0px 20px;
+    border-radius: 5px;
+}

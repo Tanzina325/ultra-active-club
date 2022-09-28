@@ -32,6 +32,19 @@ const Cards = () => {
                 <p>Tokio,Japan</p>
             </div>
             </div>
+            <div className='details'>
+            <div>
+            <h3>75kg</h3>
+            <p>Weight</p>
+            </div>
+            <div>
+            <h3> 5.8</h3>
+            <p>Height</p>
+            </div>
+            <div>
+            <h3>70yrs </h3>
+            <p>Age</p></div>
+            </div>
             </div>  
         </div>
     );
