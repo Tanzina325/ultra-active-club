@@ -10,6 +10,13 @@
 .header-menu{
     text-align: center;
 }
+.Font{display: flex;
+align-items: center;
+justify-content: center;}
+.Font h1{margin-left: 10px;
+color:orangered}
+.FontSome{font-size: 40px;
+color:blue;}
 .card-menu{
     width: 80%;
     display: grid;

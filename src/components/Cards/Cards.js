@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 // import BreakTime from '../BreakTime/BreakTime';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faYenSign } from '@fortawesome/free-solid-svg-icons';
 import Card from '../Card/Card';
 import ExerciseTime from '../ExerciseTime/ExerciseTime';
 import './Cards.css'
@@ -36,7 +38,8 @@ useEffect(()=>{
         <div className="card-container">
           <div className="yoga-card">
             <div className="header-menu">
-                <h1>YOGA-EXERCISE-CLUB</h1>
+                <div className='Font'><FontAwesomeIcon className='FontSome' icon ={faYenSign}></FontAwesomeIcon>
+                <h1>YOGA-EXERCISE-CLUB</h1></div>
                 <h4>Choose your yoga :</h4>
             </div>
             <div className="card-menu">
