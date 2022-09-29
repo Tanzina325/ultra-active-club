@@ -63,3 +63,26 @@ align-items: center;}
     margin-left:50px;
     color: gray;
 }
+@media screen and (max-width:698px) {
+  .card-menu{
+    width: 80%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+  } 
+  .yoga-card{
+    width:80%;
+    margin:0 auto;
+    background-color: aliceblue;   
+   }
+  .card-container{
+    flex-direction: column;
+}
+.sidebar-menu{
+    box-shadow: 10px 10px 20px gray;
+    margin: 0 auto;
+    margin-top: 30px;
+    width:80%;
+}
+} 
+
