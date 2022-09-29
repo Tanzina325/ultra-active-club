@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 // import BreakTime from '../BreakTime/BreakTime';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYenSign } from '@fortawesome/free-solid-svg-icons';
+
 import Card from '../Card/Card';
 import ExerciseTime from '../ExerciseTime/ExerciseTime';
 import './Cards.css'
+import Activity from '../Activity/Activity';
 const Cards = () => {
     const [cards, setCards ]=useState([]);
     const [exerciseTime,setExerciseTime] = useState([]);
@@ -86,7 +88,7 @@ useEffect(()=>{
             <div className='exercise-time'>
              <h3>Break Time : <span className='break-time'>{breakTime} seconds</span></h3>
             </div>
-            <button className='btn-activity'>Activity Completed</button>
+            <Activity></Activity>
             </div>  
         </div>
     );

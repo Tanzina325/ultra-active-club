@@ -58,15 +58,7 @@ align-items: center;}
     background-color:aliceblue ;
     margin-top: 10px;
 }
-.btn-activity{
-    padding: 15px 60px;
-    margin: 30px 40px 30px 40px;
-    color: white;
-    background-color: orangered;
-    border: none;
-    cursor: pointer;
-    
-}
+
 .break-time{
     margin-left:50px;
     color: gray;
