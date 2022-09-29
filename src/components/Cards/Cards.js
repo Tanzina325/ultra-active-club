@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import BreakTime from '../BreakTime/BreakTime';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYenSign } from '@fortawesome/free-solid-svg-icons';
 
@@ -10,6 +10,7 @@ import Activity from '../Activity/Activity';
 const Cards = () => {
     const [cards, setCards ]=useState([]);
     const [exerciseTime,setExerciseTime] = useState([]);
+    
     const [breakTime,setBreakTime] = useState(0);
     
     useEffect(()=>{
@@ -22,19 +23,18 @@ const Cards = () => {
         const newExerciseTime = [...exerciseTime, card];
         setExerciseTime(newExerciseTime)
     }
-const breakTimeAdded =()=>{
-    setBreakTime(breakTime+10);
-    localStorage.setItem('Break_Time',JSON.stringify(breakTime+10))
-    
-    
-}
+const breakTimeAdded =(breakTime)=>{
+    setBreakTime(breakTime);
+   localStorage.setItem('Break_Time',JSON.stringify(breakTime)) }
+   
+
 useEffect(()=>{
+   
     const getTime =localStorage.getItem('Break_Time');
     if(getTime){
-        setBreakTime(JSON.parse(getTime));
-}},[])
-    
-    
+        setBreakTime(JSON.parse(getTime))}
+
+},[])
 
     return (
         <div className="card-container">
@@ -76,10 +76,10 @@ useEffect(()=>{
             </div>
             <h2>Add a break</h2>
             <div className='details'>
-            <button onClick={breakTimeAdded}>10s</button>
-            <button onClick={breakTimeAdded}>20s</button>
-            <button onClick={breakTimeAdded}>30s</button>
-            <button onClick={breakTimeAdded}>40s</button>
+            <button onClick={()=>breakTimeAdded (10)}>10s</button>
+            <button onClick={()=>breakTimeAdded (20)}>20s</button>
+            <button onClick={()=>breakTimeAdded (30)}>30s</button>
+            <button onClick={()=>breakTimeAdded(40)}>40s</button>
             </div>
             <h2>Exercise Details</h2>
             <div className='exercise-time'>
