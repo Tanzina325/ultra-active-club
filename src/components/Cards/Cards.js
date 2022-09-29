@@ -1,14 +1,22 @@
 import React, { useEffect, useState } from 'react';
+import BreakTime from '../BreakTime/BreakTime';
 import Card from '../Card/Card';
+import ExerciseTime from '../ExerciseTime/ExerciseTime';
 import './Cards.css'
 const Cards = () => {
     const [cards, setCards ]=useState([]);
+    const [exerciseTime,setExerciseTime] = useState([]);
 
     useEffect(()=>{
       fetch('Fakedata.json')
       .then(res=>res.json())
       .then(data=>setCards(data))
     },[])
+
+    const handleAddToDetails = (card)=>{
+        const newExerciseTime = [...exerciseTime, card];
+        setExerciseTime(newExerciseTime)
+    }
 
     return (
         <div className="card-container">
@@ -21,6 +29,7 @@ const Cards = () => {
                 {cards.map(card=><Card  
                 key={card._id}
                 card={card}
+                handleAddToDetails={handleAddToDetails}
                 ></Card>)}
             </div>
           </div>
@@ -55,12 +64,10 @@ const Cards = () => {
             </div>
             <h2>Exercise Details</h2>
             <div className='exercise-time'>
-            <div>Exercise Time</div>
-            <div>0 seconds</div>
+            <ExerciseTime exerciseTime={exerciseTime} ></ExerciseTime>
             </div>
             <div className='exercise-time'>
-            <div>Break Time</div>
-            <div>0 seconds</div>
+             <BreakTime></BreakTime>
             </div>
             <button className='btn-activity'>Activity Completed</button>
             </div>  
