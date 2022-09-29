@@ -60,3 +60,7 @@ align-items: center;}
     cursor: pointer;
     
 }
+.break-time{
+    margin-left:50px;
+    color: gray;
+}
