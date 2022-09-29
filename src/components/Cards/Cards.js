@@ -18,7 +18,19 @@ const Cards = () => {
         const newExerciseTime = [...exerciseTime, card];
         setExerciseTime(newExerciseTime)
     }
-const breakTimeAdded =()=>{setBreakTime(breakTime+15)}
+const breakTimeAdded =()=>{
+    setBreakTime(breakTime+10);
+    localStorage.setItem('Break_Time',JSON.stringify(breakTime+10))
+    
+    
+}
+useEffect(()=>{
+    const getTime =localStorage.getItem('Break_Time');
+    if(getTime){
+        setBreakTime(JSON.parse(getTime));
+}},[])
+    
+    
 
     return (
         <div className="card-container">
