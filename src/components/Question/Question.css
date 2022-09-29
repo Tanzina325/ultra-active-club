@@ -1,0 +1,13 @@
+.question-container{
+    width:70%;
+ margin:10px;
+ padding: 10px;
+ background-color: aliceblue; 
+}
+.question{ width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding:10px;
+    background-color:orangered;
+    color: white;
+box-shadow: 10px 10 20px black;}
